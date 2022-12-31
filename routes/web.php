@@ -24,3 +24,5 @@ Route::get('registration', 'Auth\AuthController@registration')->name('register')
 Route::post('post-registration', 'Auth\AuthController@postRegistration')->name('register.post'); 
 Route::get('dashboard', 'Auth\AuthController@dashboard'); 
 Route::get('logout', 'Auth\AuthController@logout')->name('logout');
+
+Route::resource('users','UsersController');
