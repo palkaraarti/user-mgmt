@@ -26,3 +26,8 @@ Route::get('dashboard', 'Auth\AuthController@dashboard');
 Route::get('logout', 'Auth\AuthController@logout')->name('logout');
 
 Route::resource('users','UsersController');
+Route::resource('company','CompanyController');
+
+Route::get('addusers/{id}', 'MappUserToCompanyController@addusers');
+Route::post('/adduserspost', 'MappUserToCompanyController@adduserspost');
+
