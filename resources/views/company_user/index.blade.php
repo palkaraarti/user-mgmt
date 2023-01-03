@@ -8,6 +8,7 @@
             </div>
             <div class="pull-right mt-5">
                 <a class="btn btn-success" href="{{ route('users.create') }}"> Add User</a>
+                <a class="btn btn-primary" href="{{ url('/dashboard') }}"> Back</a>
             </div>
         </div>
     </div>
